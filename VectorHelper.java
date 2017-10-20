@@ -30,7 +30,29 @@ public class VectorHelper
           }
          }
      }
-    
+ /**
+     * calculer la sommes des 2 vecteurs apres parcourir les deux en meme
+     * temps et remplir un autre .
+     * exeple d"utilisation :
+     * si tab1={5,2,5} et tab2={2,1,5}
+     * alors on aure comme resultat {7,3,10}
+     * @param tab1 vedcteur des entiers numero 1
+     * @param tab2 vecdteur des entiers numero 2
+     * @return une autre vecteur qui contient la somme des deux vecteur
+     * @throws Exception  si les desu vecteurs sont de tailles differentes
+     */
+     public int[] somme(int[] tab1 , int[] tab2 ) throws Exception
+     {    int[] tab3=null;
+         if ( tab1.length != tab2.length )
+             throw new Exception("erreur");
+          else
+         {    tab3= new int[tab1.length];
+             for( int i=0; i<=tab1.length-1 ; i++ )
+                 tab3[i]=tab1[i]+tab2[i];
+         }
+
+        return tab3 ;
+     }    
 
 
 }
