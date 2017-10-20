@@ -93,5 +93,17 @@ public class VectorHelper
          }
       return tab2 ;
      }
-
+    /**
+     * parcourir les elements du vecteur et les
+     * multiplier par 2
+     * @param tab un vecteur qui contient des entiers
+     */
+     public void fonction(int[] tab)
+     {
+         if (tab!=null)
+             for(int i = 0 ;i<tab.length ; i++)
+             {
+                 tab[i]=tab[i]*2;
+             }
+     }
 }
