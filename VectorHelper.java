@@ -119,4 +119,15 @@ public class VectorHelper
          System.out.println();
      }
 
+public static void main ( String args[] )
+    {
+        VectorHelper vector = new VectorHelper();
+        int[] tab= {5,6,2,4,8,3,10};
+        vector.afficher(tab);
+        vector.afficher(vector.maxMin(tab));
+        vector.inverser(tab);
+        vector.afficher(tab);
+        vector.trier(tab);
+        vector.afficher(tab);
+    }
 }
