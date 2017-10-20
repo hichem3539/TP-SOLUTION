@@ -1,4 +1,4 @@
-﻿/**
+/**
  * c'est une classe appelé VectorHelper qui assure quelque
  * operations sur les vecteurs
  * @version 1.0
@@ -128,6 +128,7 @@ public static void main ( String args[] )
         vector.inverser(tab);
         vector.afficher(tab);
         vector.trier(tab);
+        vector.afficher(tab);
         vector.afficher(tab);
     }
 }
