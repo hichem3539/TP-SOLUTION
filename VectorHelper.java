@@ -53,6 +53,21 @@ public class VectorHelper
 
         return tab3 ;
      }    
-
+ /**
+     * inverser l"ordre des entier qui se trouvent
+     * dans le vecteur
+     * exemple d'utilisation:
+     * si tab={5,4,10,6}
+     * apre inverser on aura tab={6,10,4,5}
+     * @param tab un vecteur qui contient des entiers
+     */
+     public void inverser( int[] tab )
+     {   int x;
+         int l=(tab.length)/2;
+         for (int i=0 ; i<=l ; i++ )
+         {
+             x=tab[i];tab[i]=tab[tab.length-i-1];tab[tab.length-i-1]=x;
+         }
+     }
 
 }
