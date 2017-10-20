@@ -69,5 +69,29 @@ public class VectorHelper
              x=tab[i];tab[i]=tab[tab.length-i-1];tab[tab.length-i-1]=x;
          }
      }
+ /**
+     * parcourir les entier du vecteur
+     * et trouver le max et le min dans le vecteur
+     * @param tab un vecteur
+     * @return un vecteur qui contien le maximaum et le minimaum
+     */
+     public int[] maxMin (int[] tab)
+     {
+         int[] tab2 = new int[2];
+         if (tab==null)
+         {
+             tab2[0]=0;tab2[1]=0;
+         }
+         else
+         {
+          int[] tab3=new int[tab.length];
+          for (int i=0; i<tab.length ;i++)
+          tab3[i]=tab[i];
+          trier(tab3);
+          tab2[0]=tab3[0];
+          tab2[1]=tab3[tab.length-1];
+         }
+      return tab2 ;
+     }
 
 }
