@@ -106,4 +106,17 @@ public class VectorHelper
                  tab[i]=tab[i]*2;
              }
      }
+ /**
+     * afficher les valeurs du vecteur
+     * @param tab vecteur des entier
+     */
+     public void afficher(int[] tab)
+     {
+         for (int i = 0; i < tab.length ; i++)
+         {
+          System.out.print(tab[i]+" ");
+         }
+         System.out.println();
+     }
+
 }
