@@ -110,6 +110,7 @@ public class VectorHelper
      * afficher les valeurs du vecteur
      * @param tab vecteur des entier
      */
+
      public void ecrire(int[] tab)
      {
          for (int i = 0; i < tab.length ; i++)
@@ -123,6 +124,7 @@ public static void main ( String args[] )
     {
         VectorHelper vector = new VectorHelper();
         int[] tab= {5,6,2,4,8,3,10};
+
         vector.ecrire(tab);
         vector.ecrire(vector.maxMin(tab));
         vector.inverser(tab);
@@ -130,5 +132,6 @@ public static void main ( String args[] )
         vector.trier(tab);
         vector.ecrire(tab);
         vector.ecrire(tab);
+
     }
 }
